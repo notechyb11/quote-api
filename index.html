@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronald - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+</head>
+<body>
+    <a href="#content" class="skip-link">Skip to content</a>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Ronald</a></h1>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav aria-label="Primary">
+                <ul class="nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <button id="theme-toggle" aria-label="Toggle light mode" class="theme-btn">🌙</button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="content">
+        <section class="hero" aria-labelledby="intro-title">
+            <div class="container">
+                <div class="introduction">
+                    <img src="images/eye with sword.png" alt="Eye with Sword logo" class="intro-logo">
+                    <h2 class="intro-text">When art meets technology, the result is my portfolio.</h2>
+                    <p class="lead">A Digital Alchemist</p>
+                </div>
+                <div class="section-divider"></div>
+                <div class="hero-grid">
+                    <figure class="profile">
+                        <img src="images/blob.svg" alt="blob shape" class="blob">
+                        <img src="images/Profile.png" alt="Ronald's Profile Picture">
+                        <figcaption>Based in Butuan City, PH</figcaption>
+                    </figure>
+                    <div>
+                        <h2 id="intro-title">Hello There! I'm <span class="highlight">Ronald</span></h2>
+                        <p class="lead">I am a Web Developer that is passionate about creating beautiful and functional web experiences.</p>
+                        <a href="#projects" class="btn">See my work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-divider"></div>
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title">About</h2>
+                <p id="about-text">I am a web developer that is starting his journey in composing works that are not only functional but also visually appealing. I am highly adaptable and prefer to learn by doing hands-on work. <br><br> I am currently learning new technologies like <strong>PHP</strong> and <strong>Laravel</strong>; and improving my skills to create better web experiences. If you are interested, you can contact me via <a href="#contact">email</a> or see my code on <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a><button id="edit-about" class="edit-btn">✏️ Edit</button></p>
+            </div>
+        </section>
+        <div class="section-divider"></div>
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title">Projects</h2>
+                <div class="cards">
+                    <article class="card">
+                        <img src="images/project1.png" alt="project 1 image">
+                        <div class="card-body">
+                            <h3>Alexandria</h3>
+                            <p>A library management system proposed for Butuan City Library to make the process of handling books neat and orderly.</p>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">View Project</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="images/project2.png" alt="project 2 image">
+                        <div class="card-body">
+                            <h3>Ataraxia</h3>
+                            <p>A flowtime technique app for focus and productivity.<br><br></p>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">View Project</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="images/project3.png" alt="project 3 image">
+                        <div class="card-body">
+                            <h3>Ethos</h3>
+                            <p>A gamified habit tracker for quick and easy habit formation with added fun.<br><br></p>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">View Project</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <div class="section-divider"></div>
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title">Skills</h2>
+                <ul class="chips" role="list">
+                    <li><i class="fa-solid fa-code fa-2x"></i></li>
+                    <li><i class="fa-solid fa-paintbrush fa-2x"></i></li>
+                    <li><i class="fa-solid fa-code-branch fa-2x"></i></li>
+                    <li><i class="fa-solid fa-layer-group fa-2x"></i></li>
+                    <li><i class="fa-solid fa-lightbulb fa-2x"></i></li>
+                </ul>
+                <p>My skill set includes: <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>PHP</strong>, <strong>Laravel</strong>. I am heavily focused on front-end development and user experience design but I also dabble in some backend development as well because knowing both is always a useful trick in the trade. Aside from these skills, I also possess soft skills such as adaptability, problem-solving, and effective communication.</p>
+            </div>
+        </section>
+        <div class="section-divider"></div>
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title">Seek an Audience</h2>
+                <p class="contact-subtitle">Should you wish to collaborate or consult, please do send a message. I await your correspondence.</p>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="quote-section" class="section" aria-labelledby="quote-title">
+            <div class="container">
+                <h2 id="quote-title">Random Quote Generator</h2>
+                <div class="quote-box">
+                    <p id="quote" class="quote" aria-live="polite">Click the button to get a quote!</p>
+                    <p id="author" class="author"></p>
+                    <button id="quote-btn">New Quote</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">© <span id="year">2025</span> Ronald - Built with HTML & CSS</footer>
+    <script src="script.js"></script>
+</body>
+</html>
