@@ -95,7 +95,7 @@ async function getQuote() {
     authorElement.textContent = "";
 
     // Fetch from Vercel API
-    const response = await fetch("https://quote-proxy-mub9ezos7-albacietep-1687s-projects.vercel.app/");
+    const response = await fetch("https://quote-proxy-8qt8o1tjk-albacietep-1687s-projects.vercel.app/");
     if (!response.ok) throw new Error("Failed to fetch quote");
     const data = await response.json();
 
@@ -137,4 +137,5 @@ if (contactForm) {
         // Reset form
         this.reset();
     });
+
 }
